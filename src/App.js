@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Die from './component/Die/Die';
 
-function App() {
+function App()  {
   //   function allNewDice(max) {
   //     return Math.floor(Math.random() * max);
   // }
