@@ -1,7 +1,7 @@
 Quick start:
 
 ```
-$(play game)[https://tenzyies.netlify.app/]
+$[play game](https://tenzyies.netlify.app/)
 ```
 
 ```
