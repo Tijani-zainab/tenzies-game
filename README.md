@@ -1,6 +1,10 @@
 Quick start:
 
 ```
+$(play game)[https://tenzyies.netlify.app/]
+```
+
+```
 $ yarn # npm install
 $ yarn build # npm run build
 ````
