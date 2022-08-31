@@ -1,39 +1,35 @@
 import React from "react";
+import { useState } from "react";
 import './App.css';
 import Die from "./component/Die/Die";
 
 function App() {
 
-  //   function allNewDice(max) { 
-  //     return Math.floor(Math.random() * max);
-  // }
+  const [dice, setDice] = useState(allNewDice());
 
-  // console.log(allNewDice(7));
-
-  let arr = [];
-  for (let   i=0, t=6; i<t; i++) {
-    arr.push(Math.round(Math.random() * t))
+  function allNewDice() { // this function will generate a new array of random numbers
+    let arrNum = []
+    for (let i = 0, c = 10; i < c; i++) {
+      arrNum.push(Math.round(Math.random() * 6))
+    }
+    return arrNum;
   }
-  console.log(arr);
 
- // Array.from({length: 40}, () => Math.floor(Math.random() * 40));
+  const rollDice = dice.map(die => <Die value={die} />); // this function will map the array of random numbers to the dice component
 
   return (
     <main className="main">
-        <div className="dice-container ">
-            <Die value="1" />
-            <Die value="2" />
-            <Die value="3" />
-            <Die value="4" />
-            <Die value="5" />
-            <Die value="6" />
-            <Die value="1" />
-            <Die value="1" />
-            <Die value="1" />
-            <Die value="1" />
-        </div>
+      <h1 className="logo">Tenzies</h1>
+      <h2>Dice Roller</h2>
+      <div className="dice-container ">
+        {rollDice}
+      </div>
+      <button className="btn" onClick={() => setDice(allNewDice())}>Roll Dice</button>
     </main>
   );
 }
 
 export default App;
+
+//pull setemi's changes
+//make sure you commit local change before "pulling" to avoid conflict

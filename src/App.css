@@ -22,11 +22,18 @@ body {
   align-items: center;
 }
 
+.logo {
+  background: #0B2434;
+  margin-bottom: 20px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
 .dice-container {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
   gap: 20px;
-  
+
 }
 
 .die-face {
@@ -46,7 +53,15 @@ body {
   font-size: 2rem;
 }
 
-
+.btn {
+  background: #0B2434;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
 @media only screen and (max-width: 632px) {
 
