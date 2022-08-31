@@ -54,6 +54,7 @@ body {
 }
 
 .btn {
+  font-family: 'Karla', sans-serif;
   background: #0B2434;
   color: #fff;
   padding: 10px 20px;
@@ -62,6 +63,15 @@ body {
   cursor: pointer;
   margin-top: 20px;
 }
+
+.btn:focus {
+  outline: none;
+}
+
+.btn.active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
 
 @media only screen and (max-width: 632px) {
 
