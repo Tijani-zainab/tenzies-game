@@ -1,7 +1,8 @@
+## Quick start:
+
 ```
 $[play game](https://tenzyies.netlify.app/)
 ```
-## Quick start:
 
 ```
 $ yarn # npm install
