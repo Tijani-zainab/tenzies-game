@@ -75,6 +75,11 @@ body {
 
 @media only screen and (max-width: 632px) {
 
+  body {
+    padding: 10%;
+    margin-top: 10%;
+  }
+
   .main {
     width: 100%;
   }

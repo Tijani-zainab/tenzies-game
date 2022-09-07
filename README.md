@@ -1,8 +1,11 @@
-## Quick start:
+## a simple game of tenzies built with React js
 
-```
-$[play game](https://tenzyies.netlify.app/)
-```
+### catch: try to get all the numbers to be the same!
+
+(tenzies game)[https://tenzyies.netlify.app/]
+
+
+## Quick start:
 
 ```
 $ yarn # npm install
